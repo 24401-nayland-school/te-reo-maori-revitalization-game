@@ -1,28 +1,3 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://dlu7oe47opo8b"]
-
-[ext_resource type="StyleBox" uid="uid://c7cbyoc41gec4" path="res://resources/style_box/button/button_hover.tres" id="1_y0w32"]
-[ext_resource type="FontFile" uid="uid://bbakqajmuqcp4" path="res://assets/fonts/KaushanScript-Regular.ttf" id="1_yga3w"]
-[ext_resource type="StyleBox" uid="uid://b8y6i8ny7avvu" path="res://resources/style_box/button/button_normal.tres" id="2_7026n"]
-[ext_resource type="StyleBox" uid="uid://dsgsri6vne31l" path="res://resources/style_box/button/button_pressed.tres" id="3_7026n"]
-[ext_resource type="StyleBox" uid="uid://cien0isc7d8bd" path="res://resources/style_box/tooltip/panel.tres" id="5_i1wax"]
+[gd_resource type="Theme" format=3 uid="uid://dlu7oe47opo8b"]
 
 [resource]
-Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
-Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
-Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
-Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
-Button/colors/font_outline_color = Color(0, 0, 0, 0)
-Button/colors/font_pressed_color = Color(1, 1, 1, 1)
-Button/colors/icon_focus_color = Color(1, 1, 1, 0)
-Button/colors/icon_hover_color = Color(1, 1, 1, 0)
-Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 0)
-Button/font_sizes/font_size = 28
-Button/styles/disabled = null
-Button/styles/focus = null
-Button/styles/hover = ExtResource("1_y0w32")
-Button/styles/normal = ExtResource("2_7026n")
-Button/styles/pressed = ExtResource("3_7026n")
-HeaderLarge/font_sizes/font_size = 64
-HeaderLarge/fonts/font = ExtResource("1_yga3w")
-HeaderMedium/font_sizes/font_size = 32
-TooltipPanel/styles/panel = ExtResource("5_i1wax")

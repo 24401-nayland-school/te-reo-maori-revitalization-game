@@ -1,0 +1,30 @@
+extends Node
+class_name Queue
+
+var items: Array = []
+
+# Add a QueueItem to the queue
+func enqueue(item: QueueItem) -> void:
+	items.append(item)
+
+# Remove and return the first QueueItem
+func dequeue() -> QueueItem:
+	if is_empty():
+		push_error("Cannot dequeue from an empty queue.")
+		return null
+	return items.pop_front()
+
+# Peek at the first QueueItem without removing
+func peek() -> QueueItem:
+	if is_empty():
+		push_error("Cannot peek into an empty queue.")
+		return null
+	return items[0]
+
+# Check if queue is empty
+func is_empty() -> bool:
+	return items.size() == 0
+
+# Get number of items in queue
+func size() -> int:
+	return items.size()

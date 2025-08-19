@@ -1,0 +1,26 @@
+[
+	{
+		"id": "queue_1",
+		"title": "Title",
+		"description": "Description",
+		"tree_id": "tree_1"
+	},
+	{
+		"id": "queue_2",
+		"title": "Title",
+		"description": "Description",
+		"tree_id": "tree_4"
+	},
+	{
+		"id": "queue_3",
+		"title": "Title",
+		"description": "Description",
+		"tree_id": null
+	},
+	{
+		"id": "queue_4",
+		"title": "Title",
+		"description": "Description",
+		"tree_id": null
+	}
+]

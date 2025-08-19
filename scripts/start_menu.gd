@@ -1,10 +1,15 @@
 extends Control
 
-func _on_start_button_pressed():
+@onready var options := $Options
+
+func _on_start_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/game.tscn")
 
-func _on_options_button_pressed():
-	print("Options clicked")
+func _on_options_on_button_pressed() -> void:
+	options.show()
 
-func _on_quit_button_pressed():
+func _on_options_off_button_pressed() -> void:
+	options.hide()
+
+func _on_quit_button_pressed() -> void:
 	get_tree().quit()
