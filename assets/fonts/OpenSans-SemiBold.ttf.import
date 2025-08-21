@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bbakqajmuqcp4"
-path="res://.godot/imported/KaushanScript-Regular.ttf-6127aee4f1a50e280ebc46420da0372d.fontdata"
+uid="uid://c56t5pwttt8l0"
+path="res://.godot/imported/OpenSans-SemiBold.ttf-15d8406842a575c8f65fb9c8990d4b7c.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/KaushanScript-Regular.ttf"
-dest_files=["res://.godot/imported/KaushanScript-Regular.ttf-6127aee4f1a50e280ebc46420da0372d.fontdata"]
+source_file="res://assets/fonts/OpenSans-SemiBold.ttf"
+dest_files=["res://.godot/imported/OpenSans-SemiBold.ttf-15d8406842a575c8f65fb9c8990d4b7c.fontdata"]
 
 [params]
 

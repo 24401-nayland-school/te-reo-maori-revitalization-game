@@ -1,11 +1,9 @@
-extends Node
+extends Node2D
 
-@onready var cue_loader: CueLoader = CueLoader.new()
-
-func _ready():
-	cue_loader.load_cues("res://cue.json")
+func _ready() -> void:
+	var queue: Queue = Loader.load_queue("res://resources/json/queue.json")
+	print("Queue size: ", queue.size())
 	
-	# Access a cue by ID
-	if cue_loader.cues.has("cue_1"):
-		var cue = cue_loader.cues["cue_1"]
-		print("Loaded Cue: %s - %s" % [cue.title, cue.description])
+	while not queue.is_empty():
+		var item = queue.dequeue()
+		print(item)
