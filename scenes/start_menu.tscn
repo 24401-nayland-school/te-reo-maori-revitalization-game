@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://btw7a7dbvb46r"]
 
-[ext_resource type="Script" uid="uid://dnncle4vbce1a" path="res://scripts/start_menu.gd" id="1_ouf4f"]
-[ext_resource type="Theme" uid="uid://dkpijb0i1u1un" path="res://resources/themes/start_menu.tres" id="1_thu50"]
+[ext_resource type="Theme" uid="uid://ba73brxgv8q8k" path="res://resources/themes/theme.tres" id="1_m7x51"]
+[ext_resource type="Script" uid="uid://dnncle4vbce1a" path="res://scripts/start_menu_manager.gd" id="1_ouf4f"]
 [ext_resource type="Script" uid="uid://dhisxwfpllreu" path="res://scripts/start_menu_options.gd" id="3_m7x51"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fcv5n"]
@@ -20,14 +20,14 @@ corner_radius_bottom_left = 25
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h61rw"]
 
-[node name="StartMenu" type="Control"]
+[node name="StartMenuManager" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_thu50")
+theme = ExtResource("1_m7x51")
 script = ExtResource("1_ouf4f")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -90,6 +90,7 @@ grow_vertical = 2
 script = ExtResource("3_m7x51")
 
 [node name="OptionsMarginContainer" type="MarginContainer" parent="Options"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

@@ -13,6 +13,8 @@ config_version=5
 config/name="Te Reo Māori Revitalization Game"
 run/main_scene="res://scenes/start_menu.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/bg_color=Color(0.0392157, 0.0392157, 0.0392157, 1)
+boot_splash/image="uid://0mr8orqskdy8"
 config/icon="res://icon.svg"
 
 [display]
@@ -29,8 +31,11 @@ version_control/autoload_on_startup=true
 
 [gui]
 
-theme/custom="uid://dlu7oe47opo8b"
+theme/custom="uid://ba73brxgv8q8k"
+theme/custom_font="uid://c56t5pwttt8l0"
 
 [rendering]
 
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
 environment/defaults/default_clear_color=Color(0.0392157, 0.0392157, 0.0392157, 1)

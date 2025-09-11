@@ -10,14 +10,12 @@ func enqueue(item: QueueItem) -> void:
 # Remove and return the first QueueItem
 func dequeue() -> QueueItem:
 	if is_empty():
-		push_error("Cannot dequeue from an empty queue.")
 		return null
 	return items.pop_front()
 
 # Peek at the first QueueItem without removing
 func peek() -> QueueItem:
 	if is_empty():
-		push_error("Cannot peek into an empty queue.")
 		return null
 	return items[0]
 

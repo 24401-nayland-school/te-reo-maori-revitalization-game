@@ -1,103 +1,39 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3ykcwitxk2bw"]
+[gd_scene load_steps=2 format=3 uid="uid://c3ykcwitxk2bw"]
 
-[ext_resource type="Script" uid="uid://dmaxe80gwhac1" path="res://scenes/game_manager.gd" id="1_lnu2h"]
-[ext_resource type="PackedScene" uid="uid://c8mswrq5swypv" path="res://scenes/mp.tscn" id="1_uwrxv"]
-[ext_resource type="Texture2D" uid="uid://dpphofhpijtvq" path="res://assets/New_Zealand_Parliament_(current_composition).svg" id="1_yqjtg"]
+[ext_resource type="Script" uid="uid://dmaxe80gwhac1" path="res://scripts/game_manager.gd" id="1_uwrxv"]
 
-[node name="Game" type="Node2D"]
-script = ExtResource("1_lnu2h")
+[node name="GameManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uwrxv")
 
-[node name="NewZealandParliament(currentComposition)" type="Sprite2D" parent="."]
-scale = Vector2(1.81667, 1.81667)
-texture = ExtResource("1_yqjtg")
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Header" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
 
-[node name="Parliament" type="Node2D" parent="."]
+[node name="Label" type="Label" parent="VBoxContainer/Header"]
+layout_mode = 2
+theme_type_variation = &"HeaderLarge"
+text = "Te Kēmu Whakapakari i te Reo Māori"
+horizontal_alignment = 1
 
-[node name="MP1" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(210, 382)
+[node name="Content" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
 
-[node name="MP2" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(254, 382)
+[node name="Footer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
 
-[node name="MP3" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(298, 382)
-
-[node name="MP4" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(210, 336)
-
-[node name="MP5" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(254, 336)
-
-[node name="MP6" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(298, 336)
-
-[node name="MP7" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(210, 290)
-
-[node name="MP8" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(254, 290)
-
-[node name="MP9" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(298, 290)
-
-[node name="MP10" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(210, 245)
-
-[node name="MP11" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(254, 245)
-
-[node name="MP12" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(298, 245)
-
-[node name="MP13" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(210, 200)
-
-[node name="MP14" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(254, 200)
-
-[node name="MP15" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(298, 200)
-
-[node name="MP16" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(210, 155)
-
-[node name="MP17" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(254, 155)
-
-[node name="MP18" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(298, 155)
-
-[node name="MP19" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(210, 109)
-
-[node name="MP20" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(254, 109)
-
-[node name="MP21" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(298, 109)
-
-[node name="MP22" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(210, 63)
-
-[node name="MP23" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(254, 63)
-
-[node name="MP24" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(298, 63)
-
-[node name="MP25" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(210, 18)
-
-[node name="MP26" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(254, 18)
-
-[node name="MP27" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(298, 18)
-
-[node name="MP28" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(210, -56)
-
-[node name="MP29" parent="Parliament" instance=ExtResource("1_uwrxv")]
-position = Vector2(255, -55.23)
+[node name="ProgressBar" type="ProgressBar" parent="VBoxContainer/Footer"]
+layout_mode = 2
