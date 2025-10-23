@@ -1,126 +1,104 @@
 [
 	{
 		"id": "tree_1",
-		"title": "Title",
-		"description": "Description",
+		"title": "MAORI_DECISION_QUESTION_HERE",
+		"title_en": "ENGLISH_DECISION_QUESTION_HERE",
+		"description": "MAORI_DESCRIPTION_TEXT_HERE",
+		"description_en": "ENGLISH_DESCRIPTION_TEXT_HERE",
 		"options": [
 			{
-				"title": "Title A",
-				"description": "Description A",
-				"outcome": "Outcome A",
-				"feedback": "Feedback A",
+				"title": "MAORI_OPTION_1_TITLE",
+				"title_en": "ENGLISH_OPTION_1_TITLE",
+				"impacts": {
+					"public_support": -5,
+					"language_strength": 15,
+					"political_capital": -20,
+					"budget": -15
+				},
 				"next": "tree_2"
 			},
 			{
-				"title": "Title B",
-				"description": "Description B",
-				"outcome": "Outcome B",
-				"feedback": "Feedback B",
+				"title": "MAORI_OPTION_2_TITLE",
+				"title_en": "ENGLISH_OPTION_2_TITLE",
+				"impacts": {
+					"public_support": 5,
+					"language_strength": 8,
+					"political_capital": -5,
+					"budget": -8
+				},
 				"next": "tree_3"
+			},
+			{
+				"title": "MAORI_OPTION_3_TITLE",
+				"title_en": "ENGLISH_OPTION_3_TITLE",
+				"impacts": {
+					"public_support": -10,
+					"language_strength": -5,
+					"political_capital": 10,
+					"budget": 0
+				},
+				"next": null
 			}
 		]
 	},
 	{
 		"id": "tree_2",
-		"title": "Title",
-		"description": "Description",
+		"title": "MAORI_NEXT_DECISION_TITLE",
+		"title_en": "ENGLISH_NEXT_DECISION_TITLE",
+		"description": "MAORI_DESCRIPTION_AFTER_BOLD_CHOICE",
+		"description_en": "ENGLISH_DESCRIPTION_AFTER_BOLD_CHOICE",
 		"options": [
 			{
-				"title": "Title A",
-				"description": "Description A",
-				"outcome": "Outcome A",
-				"feedback": "Feedback A",
+				"title": "MAORI_FOLLOW_UP_OPTION_1",
+				"title_en": "ENGLISH_FOLLOW_UP_OPTION_1",
+				"impacts": {
+					"public_support": 3,
+					"language_strength": 5,
+					"political_capital": -10,
+					"budget": -20
+				},
 				"next": null
 			},
 			{
-				"title": "Title B",
-				"description": "Description B",
-				"outcome": "Outcome B",
-				"feedback": "Feedback B",
+				"title": "MAORI_FOLLOW_UP_OPTION_2",
+				"title_en": "ENGLISH_FOLLOW_UP_OPTION_2",
+				"impacts": {
+					"public_support": -8,
+					"language_strength": -10,
+					"political_capital": 5,
+					"budget": 0
+				},
 				"next": null
 			}
 		]
 	},
 	{
 		"id": "tree_3",
-		"title": "Title",
-		"description": "Description",
+		"title": "MAORI_MODERATE_PATH_TITLE",
+		"title_en": "ENGLISH_MODERATE_PATH_TITLE",
+		"description": "MAORI_DESCRIPTION_FOR_MODERATE_APPROACH",
+		"description_en": "ENGLISH_DESCRIPTION_FOR_MODERATE_APPROACH",
 		"options": [
 			{
-				"title": "Title A",
-				"description": "Description A",
-				"outcome": "Outcome A",
-				"feedback": "Feedback A",
+				"title": "MAORI_SPECIALIZATION_OPTION_1",
+				"title_en": "ENGLISH_SPECIALIZATION_OPTION_1",
+				"impacts": {
+					"public_support": 5,
+					"language_strength": 12,
+					"political_capital": -3,
+					"budget": -5
+				},
 				"next": null
 			},
 			{
-				"title": "Title B",
-				"description": "Description B",
-				"outcome": "Outcome B",
-				"feedback": "Feedback B",
-				"next": null
-			}
-		]
-	},
-	{
-		"id": "tree_4",
-		"title": "Title",
-		"description": "Description",
-		"options": [
-			{
-				"title": "Title A",
-				"description": "Description A",
-				"outcome": "Outcome A",
-				"feedback": "Feedback A",
-				"next": "tree_5"
-			},
-			{
-				"title": "Title B",
-				"description": "Description B",
-				"outcome": "Outcome B",
-				"feedback": "Feedback B",
-				"next": "tree_6"
-			}
-		]
-	},
-	{
-		"id": "tree_5",
-		"title": "Title",
-		"description": "Description",
-		"options": [
-			{
-				"title": "Title A",
-				"description": "Description A",
-				"outcome": "Outcome A",
-				"feedback": "Feedback A",
-				"next": null
-			},
-			{
-				"title": "Title B",
-				"description": "Description B",
-				"outcome": "Outcome B",
-				"feedback": "Feedback B",
-				"next": null
-			}
-		]
-	},
-	{
-		"id": "tree_6",
-		"title": "Title",
-		"description": "Description",
-		"options": [
-			{
-				"title": "Title A",
-				"description": "Description A",
-				"outcome": "Outcome A",
-				"feedback": "Feedback A",
-				"next": null
-			},
-			{
-				"title": "Title B",
-				"description": "Description B",
-				"outcome": "Outcome B",
-				"feedback": "Feedback B",
+				"title": "MAORI_SPECIALIZATION_OPTION_2",
+				"title_en": "ENGLISH_SPECIALIZATION_OPTION_2",
+				"impacts": {
+					"public_support": 8,
+					"language_strength": 10,
+					"political_capital": 0,
+					"budget": -7
+				},
 				"next": null
 			}
 		]

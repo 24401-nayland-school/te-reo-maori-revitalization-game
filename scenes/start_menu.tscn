@@ -1,24 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://btw7a7dbvb46r"]
+[gd_scene load_steps=2 format=3 uid="uid://btw7a7dbvb46r"]
 
-[ext_resource type="Theme" uid="uid://ba73brxgv8q8k" path="res://resources/themes/theme.tres" id="1_m7x51"]
 [ext_resource type="Script" uid="uid://dnncle4vbce1a" path="res://scripts/start_menu_manager.gd" id="1_ouf4f"]
-[ext_resource type="Script" uid="uid://dhisxwfpllreu" path="res://scripts/start_menu_options.gd" id="3_m7x51"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fcv5n"]
-content_margin_left = 5.0
-content_margin_top = 10.0
-content_margin_right = 10.0
-content_margin_bottom = 10.0
-bg_color = Color(0.713726, 0.419608, 0.364706, 1)
-corner_radius_top_left = 25
-corner_radius_top_right = 25
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m7x51"]
-bg_color = Color(0.947857, 0.373586, 0.515751, 1)
-corner_radius_bottom_right = 25
-corner_radius_bottom_left = 25
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h61rw"]
 
 [node name="StartMenuManager" type="Control"]
 layout_mode = 3
@@ -27,7 +9,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_m7x51")
 script = ExtResource("1_ouf4f")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -67,105 +48,11 @@ layout_mode = 2
 focus_mode = 0
 text = "Tīmata – Start"
 
-[node name="OptionsButton" type="Button" parent="VBoxContainer/ButtonVBoxContainer"]
-custom_minimum_size = Vector2(190, 0)
-layout_mode = 2
-focus_mode = 0
-text = "Kōwhiringa – Options"
-
 [node name="QuitButton" type="Button" parent="VBoxContainer/ButtonVBoxContainer"]
 custom_minimum_size = Vector2(190, 0)
 layout_mode = 2
 focus_mode = 0
 text = "Waiho – Quit"
 
-[node name="Options" type="Control" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("3_m7x51")
-
-[node name="OptionsMarginContainer" type="MarginContainer" parent="Options"]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 400
-theme_override_constants/margin_top = 150
-theme_override_constants/margin_right = 400
-theme_override_constants/margin_bottom = 150
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Options/OptionsMarginContainer"]
-layout_mode = 2
-theme_override_constants/separation = 0
-
-[node name="PanelContainer" type="PanelContainer" parent="Options/OptionsMarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_fcv5n")
-
-[node name="TabBar" type="TabBar" parent="Options/OptionsMarginContainer/VBoxContainer/PanelContainer"]
-layout_mode = 2
-current_tab = 0
-tab_count = 2
-tab_0/title = "Graphics"
-tab_1/title = "Controls"
-
-[node name="OptionPages" type="PanelContainer" parent="Options/OptionsMarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="GraphicsOptions" type="VBoxContainer" parent="Options/OptionsMarginContainer/VBoxContainer/OptionPages"]
-layout_mode = 2
-
-[node name="Panel" type="Panel" parent="Options/OptionsMarginContainer/VBoxContainer/OptionPages/GraphicsOptions"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_m7x51")
-
-[node name="ControlsOptions" type="VBoxContainer" parent="Options/OptionsMarginContainer/VBoxContainer/OptionPages"]
-visible = false
-layout_mode = 2
-
-[node name="Panel" type="Panel" parent="Options/OptionsMarginContainer/VBoxContainer/OptionPages/ControlsOptions"]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_h61rw")
-
-[node name="TabContainer" type="TabContainer" parent="Options/OptionsMarginContainer"]
-visible = false
-layout_mode = 2
-current_tab = 0
-
-[node name="Graphics" type="VBoxContainer" parent="Options/OptionsMarginContainer/TabContainer"]
-layout_mode = 2
-metadata/_tab_index = 0
-
-[node name="Control" type="VBoxContainer" parent="Options/OptionsMarginContainer/TabContainer"]
-visible = false
-layout_mode = 2
-metadata/_tab_index = 1
-
-[node name="Test" type="VBoxContainer" parent="Options/OptionsMarginContainer/TabContainer"]
-visible = false
-layout_mode = 2
-metadata/_tab_index = 2
-
-[node name="Button" type="Button" parent="Options/OptionsMarginContainer"]
-visible = false
-layout_mode = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-text = "X"
-
 [connection signal="pressed" from="VBoxContainer/ButtonVBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/ButtonVBoxContainer/OptionsButton" to="." method="_on_options_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/ButtonVBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
-[connection signal="tab_selected" from="Options/OptionsMarginContainer/VBoxContainer/PanelContainer/TabBar" to="Options" method="_on_tab_selected"]
-[connection signal="pressed" from="Options/OptionsMarginContainer/Button" to="." method="_on_options_off_button_pressed"]

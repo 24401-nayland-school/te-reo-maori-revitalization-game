@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://c3ykcwitxk2bw"]
+[gd_scene load_steps=3 format=3 uid="uid://c3ykcwitxk2bw"]
 
 [ext_resource type="Script" uid="uid://dmaxe80gwhac1" path="res://scripts/game_manager.gd" id="1_uwrxv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uwrxv"]
 
 [node name="GameManager" type="Control"]
 layout_mode = 3
@@ -11,29 +13,180 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_uwrxv")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 30
 
-[node name="Header" type="VBoxContainer" parent="VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="HeaderContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/Header"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HeaderContainer"]
 layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="GameTitle" type="Label" parent="MarginContainer/VBoxContainer/HeaderContainer/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Te Reo Māori Revitalization Game"
+mouse_filter = 0
 theme_type_variation = &"HeaderLarge"
 text = "Te Kēmu Whakapakari i te Reo Māori"
-horizontal_alignment = 1
 
-[node name="Content" type="VBoxContainer" parent="VBoxContainer"]
+[node name="CurrentItemTitle" type="Label" parent="MarginContainer/VBoxContainer/HeaderContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 0
+theme_type_variation = &"HeaderMedium"
+text = "Kaupapa o Nāianei"
+
+[node name="MetricsContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HeaderContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="SupportLabel" type="Label" parent="MarginContainer/VBoxContainer/HeaderContainer/VBoxContainer/MetricsContainer"]
+layout_mode = 2
+mouse_filter = 0
+text = "Tautoko Hapori: 50%"
+
+[node name="LanguageLabel" type="Label" parent="MarginContainer/VBoxContainer/HeaderContainer/VBoxContainer/MetricsContainer"]
+layout_mode = 2
+mouse_filter = 0
+text = "Kaha o te Reo: 50%"
+
+[node name="CapitalLabel" type="Label" parent="MarginContainer/VBoxContainer/HeaderContainer/VBoxContainer/MetricsContainer"]
+layout_mode = 2
+mouse_filter = 0
+text = "Pūtea Tōrangapū: 50"
+
+[node name="BudgetLabel" type="Label" parent="MarginContainer/VBoxContainer/HeaderContainer/VBoxContainer/MetricsContainer"]
+layout_mode = 2
+mouse_filter = 0
+text = "Pūtea: $0 miriona"
+
+[node name="ContentContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_uwrxv")
 
-[node name="Footer" type="VBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/ContentContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="EventSide" type="PanelContainer" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EventVBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/EventSide"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="EventLabel" type="Label" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/EventSide/EventVBoxContainer"]
+layout_mode = 2
+tooltip_text = "Current Event"
+mouse_filter = 0
+theme_type_variation = &"HeaderSmall"
+text = "Kaupapa o Nāianei:"
+
+[node name="EventDescription" type="RichTextLabel" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/EventSide/EventVBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "Event description will appear here"
+fit_content = true
+
+[node name="HistoryLabel" type="Label" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/EventSide/EventVBoxContainer"]
+layout_mode = 2
+tooltip_text = "Historical Context"
+mouse_filter = 0
+theme_type_variation = &"HeaderSmall"
+text = "Horopaki ō Mua:"
+
+[node name="HistoryDescription" type="RichTextLabel" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/EventSide/EventVBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "Historical context will appear here"
+fit_content = true
+
+[node name="LinkButton" type="LinkButton" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/EventSide/EventVBoxContainer"]
+layout_mode = 2
+tooltip_text = "Learn More"
+text = "Ako Atu"
+
+[node name="TreeSide" type="PanelContainer" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TreeVBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/TreeSide"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TreeTitleLabel" type="Label" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/TreeSide/TreeVBoxContainer"]
+layout_mode = 2
+tooltip_text = "Decision"
+mouse_filter = 0
+theme_type_variation = &"HeaderSmall"
+text = "Whakatau:"
+
+[node name="TreeTitle" type="Label" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/TreeSide/TreeVBoxContainer"]
+layout_mode = 2
+mouse_filter = 0
+theme_type_variation = &"HeaderMedium"
+text = "Decision Title"
+
+[node name="TreeDescription" type="RichTextLabel" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/TreeSide/TreeVBoxContainer"]
+layout_mode = 2
+bbcode_enabled = true
+text = "Decision description will appear here"
+fit_content = true
+
+[node name="OptionsLabel" type="Label" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/TreeSide/TreeVBoxContainer"]
+layout_mode = 2
+tooltip_text = "Options"
+mouse_filter = 0
+theme_type_variation = &"HeaderSmall"
+text = "Kōwhiringa:"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/TreeSide/TreeVBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+
+[node name="OptionsVBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ContentContainer/HBoxContainer/TreeSide/TreeVBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="FooterContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="ProgressBar" type="ProgressBar" parent="VBoxContainer/Footer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/FooterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/FooterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="NextButton" type="Button" parent="MarginContainer/VBoxContainer/FooterContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Next Event"
+disabled = true
+text = "Kaupapa Panuku"
+
+[node name="ProgressBar" type="ProgressBar" parent="MarginContainer/VBoxContainer/FooterContainer/VBoxContainer"]
 layout_mode = 2

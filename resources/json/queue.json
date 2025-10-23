@@ -1,26 +1,78 @@
 [
 	{
 		"id": "queue_1",
-		"title": "Title",
-		"description": "Description",
+		"title": "MAORI_EVENT_TITLE_1",
+		"title_en": "ENGLISH_EVENT_TITLE_1",
+		"description": "MAORI_EVENT_DESCRIPTION_TEXT_HERE_EXPLAINING_THE_SITUATION",
+		"description_en": "ENGLISH_EVENT_DESCRIPTION_TEXT_HERE_EXPLAINING_THE_SITUATION",
+		"category": "justice",
+		"historical_context": {
+			"year": 2024,
+			"significance": "HISTORICAL_SIGNIFICANCE_TEXT_EXPLAINING_BACKGROUND",
+			"learn_more_url": "https://example.com/learn-more"
+		},
 		"tree_id": "tree_1"
 	},
 	{
 		"id": "queue_2",
-		"title": "Title",
-		"description": "Description",
-		"tree_id": "tree_4"
+		"title": "MAORI_EVENT_TITLE_2",
+		"title_en": "ENGLISH_EVENT_TITLE_2",
+		"description": "MAORI_EVENT_DESCRIPTION_FOR_EDUCATION_RELATED_EVENT",
+		"description_en": "ENGLISH_EVENT_DESCRIPTION_FOR_EDUCATION_RELATED_EVENT",
+		"category": "education",
+		"historical_context": {
+			"year": 1985,
+			"significance": "HISTORICAL_CONTEXT_ABOUT_EDUCATION_MILESTONE",
+			"learn_more_url": "https://example.com/education-history"
+		},
+		"tree_id": "tree_2"
 	},
 	{
 		"id": "queue_3",
-		"title": "Title",
-		"description": "Description",
-		"tree_id": null
+		"title": "MAORI_EVENT_TITLE_3",
+		"title_en": "ENGLISH_EVENT_TITLE_3",
+		"description": "MAORI_DESCRIPTION_FOR_MEDIA_BROADCASTING_EVENT",
+		"description_en": "ENGLISH_DESCRIPTION_FOR_MEDIA_BROADCASTING_EVENT",
+		"category": "media",
+		"historical_context": null,
+		"tree_id": "tree_3"
 	},
 	{
 		"id": "queue_4",
-		"title": "Title",
-		"description": "Description",
+		"title": "MAORI_EVENT_TITLE_4",
+		"title_en": "ENGLISH_EVENT_TITLE_4",
+		"description": "MAORI_DESCRIPTION_FOR_COMMUNITY_CELEBRATION_EVENT",
+		"description_en": "ENGLISH_DESCRIPTION_FOR_COMMUNITY_CELEBRATION_EVENT",
+		"category": "community",
+		"historical_context": {
+			"year": 1975,
+			"significance": "HISTORICAL_BACKGROUND_FOR_LANGUAGE_WEEK_TRADITION",
+			"learn_more_url": "https://example.com/language-week"
+		},
+		"tree_id": "tree_4"
+	},
+	{
+		"id": "queue_5",
+		"title": "MAORI_EVENT_TITLE_5",
+		"title_en": "ENGLISH_EVENT_TITLE_5",
+		"description": "MAORI_DESCRIPTION_FOR_GOVERNMENT_POLICY_PROPOSAL",
+		"description_en": "ENGLISH_DESCRIPTION_FOR_GOVERNMENT_POLICY_PROPOSAL",
+		"category": "government",
+		"historical_context": null,
+		"tree_id": null
+	},
+	{
+		"id": "queue_6",
+		"title": "MAORI_EVENT_TITLE_WITHOUT_TREE",
+		"title_en": "ENGLISH_EVENT_TITLE_WITHOUT_TREE",
+		"description": "MAORI_DESCRIPTION_FOR_EVENT_WITH_NO_DECISIONS",
+		"description_en": "ENGLISH_DESCRIPTION_FOR_EVENT_WITH_NO_DECISIONS",
+		"category": "information",
+		"historical_context": {
+			"year": 2020,
+			"significance": "RECENT_DEVELOPMENT_CONTEXT",
+			"learn_more_url": "https://example.com/recent-news"
+		},
 		"tree_id": null
 	}
 ]

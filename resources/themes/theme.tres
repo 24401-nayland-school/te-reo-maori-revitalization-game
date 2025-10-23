@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=11 format=3 uid="uid://ba73brxgv8q8k"]
+[gd_resource type="Theme" load_steps=12 format=3 uid="uid://ba73brxgv8q8k"]
 
 [ext_resource type="StyleBox" uid="uid://c7cbyoc41gec4" path="res://resources/style_box/start_menu/button_hover.tres" id="1_nto0i"]
 [ext_resource type="StyleBox" uid="uid://b8y6i8ny7avvu" path="res://resources/style_box/start_menu/button_normal.tres" id="2_dpgrt"]
@@ -16,6 +16,15 @@ bg_color = Color(0.294118, 0.435294, 0.266667, 1)
 bg_color = Color(0.192157, 0.270588, 0.172549, 1)
 corner_radius_top_right = 25
 corner_radius_bottom_right = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yik6l"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.29411766, 0.43529412, 0.26666668, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [resource]
 Button/colors/font_focus_color = Color(0.960784, 0.960784, 0.960784, 1)
@@ -44,3 +53,4 @@ TabBar/styles/tab_focus = ExtResource("6_lnfs5")
 TabBar/styles/tab_hovered = ExtResource("7_ar87w")
 TabBar/styles/tab_selected = ExtResource("6_lnfs5")
 TabBar/styles/tab_unselected = ExtResource("8_dudts")
+TooltipPanel/styles/panel = SubResource("StyleBoxFlat_yik6l")
