@@ -49,8 +49,8 @@
 		"description_en": "The Tribunal is being established. Its powers must be defined.",
 		"options": [
 			{
-				"title": "Mana nui - ka taea te whakatau tikanga",
-				"title_en": "Strong powers - can make binding decisions",
+				"title": "Mana nui, ka taea te whakatau tikanga",
+				"title_en": "Strong powers, can make binding decisions",
 				"impacts": {
 					"public_support": 10,
 					"language_strength": 5,
@@ -60,8 +60,8 @@
 				"next": null
 			},
 			{
-				"title": "Mana waenga - ka taea te tūtohi anake",
-				"title_en": "Moderate powers - can only recommend",
+				"title": "Mana waenga, ka taea te tūtohi anake",
+				"title_en": "Moderate powers, can only recommend",
 				"impacts": {
 					"public_support": 5,
 					"language_strength": 3,
@@ -164,8 +164,8 @@
 		"description_en": "The dedicated office has been established. Who should lead it?",
 		"options": [
 			{
-				"title": "He kōmiti tahi - Māori me te Kāwanatanga",
-				"title_en": "Joint committee - Māori and Government",
+				"title": "He kōmiti tahi, Māori me te Kāwanatanga",
+				"title_en": "Joint committee, Māori and Government",
 				"impacts": {
 					"public_support": 10,
 					"language_strength": 8,
@@ -363,8 +363,8 @@
 				"next": null
 			},
 			{
-				"title": "Pūtea nui ake - he mea motuhake",
-				"title_en": "Extra funding - they are special",
+				"title": "Pūtea nui ake, he mea motuhake",
+				"title_en": "Extra funding, they are special",
 				"impacts": {
 					"public_support": 15,
 					"language_strength": 18,
@@ -425,8 +425,8 @@
 		"description_en": "Te Māngai Pāho will be established. What about funding?",
 		"options": [
 			{
-				"title": "Pūtea nui - kia kaha te reo irirangi",
-				"title_en": "Large funding - strengthen radio",
+				"title": "Pūtea nui, kia kaha te reo irirangi",
+				"title_en": "Large funding, strengthen radio",
 				"impacts": {
 					"public_support": 15,
 					"language_strength": 18,
@@ -436,8 +436,8 @@
 				"next": "tree_9a"
 			},
 			{
-				"title": "Pūtea takitahi - kia tika te haere",
-				"title_en": "Modest funding - just get started",
+				"title": "Pūtea takitahi, kia tika te haere",
+				"title_en": "Modest funding, just get started",
 				"impacts": {
 					"public_support": 8,
 					"language_strength": 10,
@@ -487,8 +487,8 @@
 		"description_en": "1995 is Māori Language Year. What programs should we have?",
 		"options": [
 			{
-				"title": "Ngā kaupapa puta noa - wānanga, whakanui",
-				"title_en": "Nationwide programs - workshops, celebrations",
+				"title": "Ngā kaupapa puta noa, wānanga, whakanui",
+				"title_en": "Nationwide programs, workshops, celebrations",
 				"impacts": {
 					"public_support": 18,
 					"language_strength": 15,
@@ -607,14 +607,14 @@
 	},
 	{
 		"id": "tree_13",
-		"title": "Te mahi tahi - me pēhea?",
-		"title_en": "Partnership - how should it work?",
+		"title": "Te mahi tahi, me pēhea?",
+		"title_en": "Partnership, how should it work?",
 		"description": "Ko Te Ture mō Te Reo Māori 2016 e whakatū ana i te mahi tahi. Me pēhea te whakarite?",
 		"description_en": "The Māori Language Act 2016 establishes partnership. How should it be structured?",
 		"options": [
 			{
-				"title": "Te Mātāwai - mana motuhake Māori",
-				"title_en": "Te Mātāwai - independent Māori authority",
+				"title": "Te Mātāwai, mana motuhake Māori",
+				"title_en": "Te Mātāwai, independent Māori authority",
 				"impacts": {
 					"public_support": 20,
 					"language_strength": 25,
@@ -624,8 +624,8 @@
 				"next": "tree_13a"
 			},
 			{
-				"title": "Kōmiti tahi - ōrite te mana",
-				"title_en": "Joint committee - equal authority",
+				"title": "Kōmiti tahi, ōrite te mana",
+				"title_en": "Joint committee, equal authority",
 				"impacts": {
 					"public_support": 15,
 					"language_strength": 20,
