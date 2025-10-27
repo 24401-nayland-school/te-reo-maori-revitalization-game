@@ -62,10 +62,6 @@ func load_next_item() -> void:
 		show_game_complete()
 		return
 	
-	print(queue.peek().to_string())
-	if queue.peek().tree:
-		print(queue.peek().tree.to_string())
-	
 	# Make sure tree side is visible for new item
 	tree_side.show()
 	
@@ -190,7 +186,7 @@ func display_decision_node(node: TreeNode) -> void:
 			
 			options_container.add_child(button)
 	else:
-		# No children - enable next button
+		# No children, enable next button
 		next_button.disabled = false
 
 # Navigate to the selected child node
@@ -205,7 +201,7 @@ func handle_option_selected(selected_node: TreeNode) -> void:
 		current_tree_node = selected_node.children[0]
 		display_tree_node(current_tree_node)
 	else:
-		# No next tree - this option ends the branch
+		# No next tree, this option ends the branch
 		# Hide the tree side panel since user already knows what happened
 		tree_side.hide()
 		clear_options()
@@ -282,18 +278,27 @@ func update_metrics_display() -> void:
 # Check for game over conditions
 func check_game_over() -> void:
 	if public_support <= 10:
-		show_game_over("Kua ngaro te tautoko hapori, kua pōtingia koe ki waho!")
+		show_game_over(false)  # Lost
 	elif language_strength >= 95:
-		show_game_over("Kei te kaha te Reo Māori! Kua tutuki koe i te whakaoranga tino!")
+		show_game_over(true)  # Won
 
 # Show game over screen
-func show_game_over(message: String) -> void:
+func show_game_over(is_victory: bool) -> void:
 	current_title.text = "Kua Mutu te Kēmu"
 	if SHOW_ENGLISH_TOOLTIPS:
 		current_title.tooltip_text = "Game Over"
 	
 	event_description.clear()
-	event_description.append_text(message)
+	
+	# Display appropriate message based on victory or defeat
+	if is_victory:
+		create_tooltip_text(event_description, 
+			"Kua kaha te Reo Māori! Kua tutuki koe i te whakaoranga tino!", 
+			"Te Reo Māori is strong! You have achieved full revitalization!")
+	else:
+		create_tooltip_text(event_description, 
+			"Kua ngaro te tautoko hapori, kua pōtingia koe ki waho!", 
+			"Public support has been lost, you have been voted out!")
 	
 	# Hide history section
 	history_label.hide()

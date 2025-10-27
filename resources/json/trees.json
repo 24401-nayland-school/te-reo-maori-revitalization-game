@@ -1,39 +1,39 @@
 [
 	{
 		"id": "tree_1",
-		"title": "MAORI_DECISION_QUESTION_HERE",
-		"title_en": "ENGLISH_DECISION_QUESTION_HERE",
-		"description": "MAORI_DESCRIPTION_TEXT_HERE",
-		"description_en": "ENGLISH_DESCRIPTION_TEXT_HERE",
+		"title": "Me pēhea te urupare ki te petihana?",
+		"title_en": "How should we respond to the petition?",
+		"description": "Ko ngā 30,000 waitohu e tohe ana kia tiakina te Reo Māori. He wā tino nui tēnei.",
+		"description_en": "The 30,000 signatures demand protection for Te Reo Māori. This is a critical moment.",
 		"options": [
 			{
-				"title": "MAORI_OPTION_1_TITLE",
-				"title_en": "ENGLISH_OPTION_1_TITLE",
+				"title": "Tautokohia te petihana, whakatūria he kōmiti rangahau",
+				"title_en": "Support the petition, establish a research committee",
+				"impacts": {
+					"public_support": 15,
+					"language_strength": 10,
+					"political_capital": -10,
+					"budget": -5
+				},
+				"next": null
+			},
+			{
+				"title": "Whakarongo, engari taihoa te mahi",
+				"title_en": "Listen, but delay action",
 				"impacts": {
 					"public_support": -5,
-					"language_strength": 15,
-					"political_capital": -20,
-					"budget": -15
+					"language_strength": 0,
+					"political_capital": 5,
+					"budget": 0
 				},
-				"next": "tree_2"
+				"next": null
 			},
 			{
-				"title": "MAORI_OPTION_2_TITLE",
-				"title_en": "ENGLISH_OPTION_2_TITLE",
+				"title": "Whakahē i te petihana",
+				"title_en": "Reject the petition",
 				"impacts": {
-					"public_support": 5,
-					"language_strength": 8,
-					"political_capital": -5,
-					"budget": -8
-				},
-				"next": "tree_3"
-			},
-			{
-				"title": "MAORI_OPTION_3_TITLE",
-				"title_en": "ENGLISH_OPTION_3_TITLE",
-				"impacts": {
-					"public_support": -10,
-					"language_strength": -5,
+					"public_support": -20,
+					"language_strength": -10,
 					"political_capital": 10,
 					"budget": 0
 				},
@@ -43,29 +43,29 @@
 	},
 	{
 		"id": "tree_2",
-		"title": "MAORI_NEXT_DECISION_TITLE",
-		"title_en": "ENGLISH_NEXT_DECISION_TITLE",
-		"description": "MAORI_DESCRIPTION_AFTER_BOLD_CHOICE",
-		"description_en": "ENGLISH_DESCRIPTION_AFTER_BOLD_CHOICE",
+		"title": "Me aha te Rōpū Whakamana?",
+		"title_en": "What powers should the Tribunal have?",
+		"description": "Ka whakatūngia te Rōpū Whakamana. Me whakarite i ōna mana.",
+		"description_en": "The Tribunal is being established. Its powers must be defined.",
 		"options": [
 			{
-				"title": "MAORI_FOLLOW_UP_OPTION_1",
-				"title_en": "ENGLISH_FOLLOW_UP_OPTION_1",
+				"title": "Mana nui - ka taea te whakatau tikanga",
+				"title_en": "Strong powers - can make binding decisions",
 				"impacts": {
-					"public_support": 3,
+					"public_support": 10,
 					"language_strength": 5,
-					"political_capital": -10,
-					"budget": -20
+					"political_capital": -15,
+					"budget": 0
 				},
 				"next": null
 			},
 			{
-				"title": "MAORI_FOLLOW_UP_OPTION_2",
-				"title_en": "ENGLISH_FOLLOW_UP_OPTION_2",
+				"title": "Mana waenga - ka taea te tūtohi anake",
+				"title_en": "Moderate powers - can only recommend",
 				"impacts": {
-					"public_support": -8,
-					"language_strength": -10,
-					"political_capital": 5,
+					"public_support": 5,
+					"language_strength": 3,
+					"political_capital": -5,
 					"budget": 0
 				},
 				"next": null
@@ -74,30 +74,605 @@
 	},
 	{
 		"id": "tree_3",
-		"title": "MAORI_MODERATE_PATH_TITLE",
-		"title_en": "ENGLISH_MODERATE_PATH_TITLE",
-		"description": "MAORI_DESCRIPTION_FOR_MODERATE_APPROACH",
-		"description_en": "ENGLISH_DESCRIPTION_FOR_MODERATE_APPROACH",
+		"title": "Me pēhea te tautoko i te kērēme?",
+		"title_en": "How should we support the claim?",
+		"description": "Ko WAI 11 te kērēme tuatahi mō te Reo Māori. He mea nui.",
+		"description_en": "WAI 11 is the first claim for Te Reo Māori. This is significant.",
 		"options": [
 			{
-				"title": "MAORI_SPECIALIZATION_OPTION_1",
-				"title_en": "ENGLISH_SPECIALIZATION_OPTION_1",
+				"title": "Tautokohia kaha, whakaratohia ngā pūtea",
+				"title_en": "Strongly support, provide funding",
+				"impacts": {
+					"public_support": 12,
+					"language_strength": 8,
+					"political_capital": -10,
+					"budget": -10
+				},
+				"next": null
+			},
+			{
+				"title": "Tautoko māmā noa iho",
+				"title_en": "Provide minimal support",
+				"impacts": {
+					"public_support": 3,
+					"language_strength": 2,
+					"political_capital": -3,
+					"budget": -2
+				},
+				"next": null
+			},
+			{
+				"title": "Tatari ki te pūrongo",
+				"title_en": "Wait for the report",
+				"impacts": {
+					"public_support": -5,
+					"language_strength": 0,
+					"political_capital": 5,
+					"budget": 0
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_4",
+		"title": "Me whai i ngā tūtohi a te Rōpū?",
+		"title_en": "Should we follow the Tribunal's recommendations?",
+		"description": "Kei te kī te pūrongo me tautoko te Kāwanatanga i te Reo Māori.",
+		"description_en": "The report says the Government must actively support Te Reo Māori.",
+		"options": [
+			{
+				"title": "Whakatū i tētahi tari motuhake",
+				"title_en": "Establish a dedicated office",
+				"impacts": {
+					"public_support": 15,
+					"language_strength": 12,
+					"political_capital": -15,
+					"budget": -20
+				},
+				"next": "tree_4a"
+			},
+			{
+				"title": "Whakauru ki roto i ngā tari kei reira",
+				"title_en": "Integrate into existing departments",
 				"impacts": {
 					"public_support": 5,
-					"language_strength": 12,
-					"political_capital": -3,
+					"language_strength": 5,
+					"political_capital": -5,
 					"budget": -5
 				},
 				"next": null
 			},
 			{
-				"title": "MAORI_SPECIALIZATION_OPTION_2",
-				"title_en": "ENGLISH_SPECIALIZATION_OPTION_2",
+				"title": "Whakahē i ngā tūtohi",
+				"title_en": "Reject the recommendations",
+				"impacts": {
+					"public_support": -25,
+					"language_strength": -15,
+					"political_capital": 10,
+					"budget": 0
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_4a",
+		"title": "Ko wai hei kaihautū?",
+		"title_en": "Who should lead?",
+		"description": "Ko te tari motuhake kua whakatūngia. Ko wai hei kaihautū?",
+		"description_en": "The dedicated office has been established. Who should lead it?",
+		"options": [
+			{
+				"title": "He kōmiti tahi - Māori me te Kāwanatanga",
+				"title_en": "Joint committee - Māori and Government",
+				"impacts": {
+					"public_support": 10,
+					"language_strength": 8,
+					"political_capital": -5,
+					"budget": -5
+				},
+				"next": null
+			},
+			{
+				"title": "He kōmiti Māori motuhake",
+				"title_en": "Independent Māori committee",
+				"impacts": {
+					"public_support": 15,
+					"language_strength": 10,
+					"political_capital": -10,
+					"budget": -8
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_5",
+		"title": "Me whakamana te Reo Māori?",
+		"title_en": "Should we make Te Reo Māori official?",
+		"description": "He wā nui tēnei mō te Reo Māori. Me whakamana hei reo ōfihia?",
+		"description_en": "This is a major moment for Te Reo Māori. Should we make it an official language?",
+		"options": [
+			{
+				"title": "Āe! Whakamanaia hei reo ōfihia",
+				"title_en": "Yes! Make it an official language",
+				"impacts": {
+					"public_support": 20,
+					"language_strength": 25,
+					"political_capital": -25,
+					"budget": -15
+				},
+				"next": "tree_5a"
+			},
+			{
+				"title": "Whakamana, engari ki te taha o te reo Pākehā",
+				"title_en": "Make it official, but secondary to English",
+				"impacts": {
+					"public_support": 10,
+					"language_strength": 15,
+					"political_capital": -10,
+					"budget": -8
+				},
+				"next": null
+			},
+			{
+				"title": "Kāo, he tere rawa",
+				"title_en": "No, it's too soon",
+				"impacts": {
+					"public_support": -30,
+					"language_strength": -20,
+					"political_capital": 15,
+					"budget": 0
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_5a",
+		"title": "Ko Te Taura Whiri?",
+		"title_en": "What about Te Taura Whiri?",
+		"description": "Me whakatū i Te Taura Whiri i te Reo Māori hei tari tiaki?",
+		"description_en": "Should we establish Te Taura Whiri i te Reo Māori as a protective commission?",
+		"options": [
+			{
+				"title": "Whakatū, me te mana whakatau",
+				"title_en": "Establish it, with decision-making power",
+				"impacts": {
+					"public_support": 15,
+					"language_strength": 15,
+					"political_capital": -15,
+					"budget": -20
+				},
+				"next": null
+			},
+			{
+				"title": "Whakatū, engari hei kaitohutohu noa",
+				"title_en": "Establish it, but advisory only",
 				"impacts": {
 					"public_support": 8,
 					"language_strength": 10,
+					"political_capital": -8,
+					"budget": -10
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_6",
+		"title": "Me aha ki te Whakapūtanga?",
+		"title_en": "What about the Declaration?",
+		"description": "Kei te tohe te Whakapūtanga o Matawaia mō te mana motuhake o te ako reo.",
+		"description_en": "The Matawaia Declaration advocates for autonomy in language education.",
+		"options": [
+			{
+				"title": "Whakaae ki te mana motuhake",
+				"title_en": "Agree to autonomy",
+				"impacts": {
+					"public_support": 15,
+					"language_strength": 18,
+					"political_capital": -20,
+					"budget": -12
+				},
+				"next": null
+			},
+			{
+				"title": "Tautoko, engari ki raro i te Kāwanatanga",
+				"title_en": "Support, but under Government oversight",
+				"impacts": {
+					"public_support": 8,
+					"language_strength": 10,
+					"political_capital": -10,
+					"budget": -8
+				},
+				"next": null
+			},
+			{
+				"title": "Whakahē i te mana motuhake",
+				"title_en": "Reject autonomy",
+				"impacts": {
+					"public_support": -20,
+					"language_strength": -10,
+					"political_capital": 10,
+					"budget": 0
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_7",
+		"title": "Te Reo Māori i ngā kura?",
+		"title_en": "Te Reo Māori in schools?",
+		"description": "Me pēhea te whakauru i te Reo Māori ki te pūnaha mātauranga?",
+		"description_en": "How should Te Reo Māori be integrated into the education system?",
+		"options": [
+			{
+				"title": "Kia wātea ngā Kura Kaupapa Māori",
+				"title_en": "Allow full Māori immersion schools",
+				"impacts": {
+					"public_support": 18,
+					"language_strength": 22,
+					"political_capital": -20,
+					"budget": -25
+				},
+				"next": "tree_7a"
+			},
+			{
+				"title": "Te Reo Māori hei marau ā-kura",
+				"title_en": "Te Reo Māori as a school subject",
+				"impacts": {
+					"public_support": 10,
+					"language_strength": 12,
+					"political_capital": -10,
+					"budget": -10
+				},
+				"next": null
+			},
+			{
+				"title": "Waiho mā ngā kura e whakatau",
+				"title_en": "Let schools decide",
+				"impacts": {
+					"public_support": -5,
+					"language_strength": 3,
+					"political_capital": 5,
+					"budget": 0
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_7a",
+		"title": "Me pēhea te pūtea?",
+		"title_en": "How should funding work?",
+		"description": "Kua whakaae ki ngā Kura Kaupapa Māori. Me pēhea te pūtea?",
+		"description_en": "Kura Kaupapa Māori have been approved. How should funding work?",
+		"options": [
+			{
+				"title": "Pūtea ōrite ki ngā kura auraki",
+				"title_en": "Equal funding to mainstream schools",
+				"impacts": {
+					"public_support": 12,
+					"language_strength": 15,
+					"political_capital": -10,
+					"budget": -15
+				},
+				"next": null
+			},
+			{
+				"title": "Pūtea nui ake - he mea motuhake",
+				"title_en": "Extra funding - they are special",
+				"impacts": {
+					"public_support": 15,
+					"language_strength": 18,
+					"political_capital": -18,
+					"budget": -25
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_8",
+		"title": "Me whakakaha i Te Taura Whiri?",
+		"title_en": "Should we strengthen Te Taura Whiri?",
+		"description": "Ka taea te whakakaha i Te Taura Whiri. Me aha?",
+		"description_en": "Te Taura Whiri can be strengthened. What should be done?",
+		"options": [
+			{
+				"title": "Hoatu mana whakatau ki ngā kupu hou",
+				"title_en": "Give authority over new vocabulary",
+				"impacts": {
+					"public_support": 10,
+					"language_strength": 12,
+					"political_capital": -8,
+					"budget": -8
+				},
+				"next": null
+			},
+			{
+				"title": "Hoatu pūtea mō ngā kaupapa ako",
+				"title_en": "Provide funding for education programs",
+				"impacts": {
+					"public_support": 12,
+					"language_strength": 15,
+					"political_capital": -10,
+					"budget": -15
+				},
+				"next": null
+			},
+			{
+				"title": "Whakapiki i te tangata hoki",
+				"title_en": "Increase staffing too",
+				"impacts": {
+					"public_support": 15,
+					"language_strength": 18,
+					"political_capital": -15,
+					"budget": -22
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_9",
+		"title": "Te pūtea mō Te Māngai Pāho?",
+		"title_en": "Funding for Te Māngai Pāho?",
+		"description": "Me whakatū i Te Māngai Pāho. He pēhea te pūtea?",
+		"description_en": "Te Māngai Pāho will be established. What about funding?",
+		"options": [
+			{
+				"title": "Pūtea nui - kia kaha te reo irirangi",
+				"title_en": "Large funding - strengthen radio",
+				"impacts": {
+					"public_support": 15,
+					"language_strength": 18,
+					"political_capital": -15,
+					"budget": -20
+				},
+				"next": "tree_9a"
+			},
+			{
+				"title": "Pūtea takitahi - kia tika te haere",
+				"title_en": "Modest funding - just get started",
+				"impacts": {
+					"public_support": 8,
+					"language_strength": 10,
+					"political_capital": -8,
+					"budget": -10
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_9a",
+		"title": "Te pouaka whakaata Māori?",
+		"title_en": "Māori television?",
+		"description": "Kei te kaha te reo irirangi. Me whakaaro ki te pouaka whakaata?",
+		"description_en": "Radio is strong. Should we consider television?",
+		"options": [
+			{
+				"title": "Āe, me tīmata te whakarite",
+				"title_en": "Yes, start planning now",
+				"impacts": {
+					"public_support": 12,
+					"language_strength": 10,
+					"political_capital": -10,
+					"budget": -15
+				},
+				"next": null
+			},
+			{
+				"title": "Taihoa, kia kaha te reo irirangi",
+				"title_en": "Wait, strengthen radio first",
+				"impacts": {
+					"public_support": 5,
+					"language_strength": 8,
 					"political_capital": 0,
-					"budget": -7
+					"budget": -5
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_10",
+		"title": "Ngā kaupapa mō te Tau o te Reo?",
+		"title_en": "Programs for Language Year?",
+		"description": "Ko 1995 Te Tau o te Reo Māori. Me aha ngā kaupapa?",
+		"description_en": "1995 is Māori Language Year. What programs should we have?",
+		"options": [
+			{
+				"title": "Ngā kaupapa puta noa - wānanga, whakanui",
+				"title_en": "Nationwide programs - workshops, celebrations",
+				"impacts": {
+					"public_support": 18,
+					"language_strength": 15,
+					"political_capital": -12,
+					"budget": -18
+				},
+				"next": null
+			},
+			{
+				"title": "Ngā kaupapa ā-rohe",
+				"title_en": "Regional programs",
+				"impacts": {
+					"public_support": 10,
+					"language_strength": 10,
+					"political_capital": -8,
+					"budget": -10
+				},
+				"next": null
+			},
+			{
+				"title": "Ngā kaupapa ki te ipurangi",
+				"title_en": "Online programs",
+				"impacts": {
+					"public_support": 12,
+					"language_strength": 12,
+					"political_capital": -5,
+					"budget": -8
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_11",
+		"title": "Te hoahoa o Māori Television?",
+		"title_en": "The design of Māori Television?",
+		"description": "Me aha te āhua o te rārangi pouaka whakaata Māori?",
+		"description_en": "What should Māori Television look like?",
+		"options": [
+			{
+				"title": "Reo Māori anake",
+				"title_en": "Māori language only",
+				"impacts": {
+					"public_support": 10,
+					"language_strength": 25,
+					"political_capital": -20,
+					"budget": -20
+				},
+				"next": null
+			},
+			{
+				"title": "Reo Māori me ngā tohukī Pākehā",
+				"title_en": "Māori with English subtitles",
+				"impacts": {
+					"public_support": 20,
+					"language_strength": 20,
+					"political_capital": -15,
+					"budget": -25
+				},
+				"next": null
+			},
+			{
+				"title": "Reo Māori me te reo Pākehā",
+				"title_en": "Both Māori and English",
+				"impacts": {
+					"public_support": 15,
+					"language_strength": 12,
+					"political_capital": -10,
+					"budget": -20
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_12",
+		"title": "Te Reo Māori i te rohe moana?",
+		"title_en": "Te Reo Māori in coastal management?",
+		"description": "Me pēhea te whakauru i te Reo Māori ki te whakahaere takutai?",
+		"description_en": "How should Te Reo Māori be integrated into coastal management?",
+		"options": [
+			{
+				"title": "Ngā ingoa Māori mō ngā wāhi katoa",
+				"title_en": "Māori names for all places",
+				"impacts": {
+					"public_support": 15,
+					"language_strength": 18,
+					"political_capital": -15,
+					"budget": -10
+				},
+				"next": null
+			},
+			{
+				"title": "Te Reo Māori i ngā tohu",
+				"title_en": "Te Reo Māori on signs",
+				"impacts": {
+					"public_support": 10,
+					"language_strength": 12,
+					"political_capital": -8,
+					"budget": -8
+				},
+				"next": null
+			},
+			{
+				"title": "Ngā tikanga Māori i roto i ngā whakatau",
+				"title_en": "Māori protocols in decision-making",
+				"impacts": {
+					"public_support": 12,
+					"language_strength": 10,
+					"political_capital": -10,
+					"budget": -5
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_13",
+		"title": "Te mahi tahi - me pēhea?",
+		"title_en": "Partnership - how should it work?",
+		"description": "Ko Te Ture mō Te Reo Māori 2016 e whakatū ana i te mahi tahi. Me pēhea te whakarite?",
+		"description_en": "The Māori Language Act 2016 establishes partnership. How should it be structured?",
+		"options": [
+			{
+				"title": "Te Mātāwai - mana motuhake Māori",
+				"title_en": "Te Mātāwai - independent Māori authority",
+				"impacts": {
+					"public_support": 20,
+					"language_strength": 25,
+					"political_capital": -25,
+					"budget": -30
+				},
+				"next": "tree_13a"
+			},
+			{
+				"title": "Kōmiti tahi - ōrite te mana",
+				"title_en": "Joint committee - equal authority",
+				"impacts": {
+					"public_support": 15,
+					"language_strength": 20,
+					"political_capital": -15,
+					"budget": -20
+				},
+				"next": null
+			},
+			{
+				"title": "Karauna matua, Māori kaitohutohu",
+				"title_en": "Crown leads, Māori advises",
+				"impacts": {
+					"public_support": 5,
+					"language_strength": 10,
+					"political_capital": -5,
+					"budget": -10
+				},
+				"next": null
+			}
+		]
+	},
+	{
+		"id": "tree_13a",
+		"title": "Ngā mana o Te Mātāwai?",
+		"title_en": "Powers of Te Mātāwai?",
+		"description": "Kua whakatūngia Te Mātāwai. He aha ngā mana?",
+		"description_en": "Te Mātāwai has been established. What powers should it have?",
+		"options": [
+			{
+				"title": "Mana whakahaere me te pūtea",
+				"title_en": "Management authority and funding control",
+				"impacts": {
+					"public_support": 20,
+					"language_strength": 22,
+					"political_capital": -20,
+					"budget": -25
+				},
+				"next": null
+			},
+			{
+				"title": "Mana whakahaere, pūtea ki te Karauna",
+				"title_en": "Management authority, Crown controls funding",
+				"impacts": {
+					"public_support": 12,
+					"language_strength": 15,
+					"political_capital": -10,
+					"budget": -15
 				},
 				"next": null
 			}

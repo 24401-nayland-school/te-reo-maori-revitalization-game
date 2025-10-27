@@ -1,78 +1,184 @@
 [
 	{
 		"id": "queue_1",
-		"title": "MAORI_EVENT_TITLE_1",
-		"title_en": "ENGLISH_EVENT_TITLE_1",
-		"description": "MAORI_EVENT_DESCRIPTION_TEXT_HERE_EXPLAINING_THE_SITUATION",
-		"description_en": "ENGLISH_EVENT_DESCRIPTION_TEXT_HERE_EXPLAINING_THE_SITUATION",
-		"category": "justice",
+		"title": "Te Petihana Reo Māori 1972",
+		"title_en": "The 1972 Māori Language Petition",
+		"description": "Kua whiwhi te petihana i ngā waitohu 30,000. Ko te take matua: me tiaki te Reo Māori. He wā tino whakahirahira tēnei mō te oranga o te reo.",
+		"description_en": "A petition has gathered over 30,000 signatures. The main issue: Te Reo Māori must be protected. This is a critical moment for the survival of the language.",
+		"category": "activism",
 		"historical_context": {
-			"year": 2024,
-			"significance": "HISTORICAL_SIGNIFICANCE_TEXT_EXPLAINING_BACKGROUND",
-			"learn_more_url": "https://example.com/learn-more"
+			"year": 1972,
+			"significance": "He petihana nui tēnei i tukuna ki te Pāremata e Hana Te Hemara. I whakaatu i te hiahia nui o te iwi kia tiakina te Reo Māori.",
+			"learn_more_url": "https://nzhistory.govt.nz/culture/maori-language-week/history-of-the-maori-language"
 		},
 		"tree_id": "tree_1"
 	},
 	{
 		"id": "queue_2",
-		"title": "MAORI_EVENT_TITLE_2",
-		"title_en": "ENGLISH_EVENT_TITLE_2",
-		"description": "MAORI_EVENT_DESCRIPTION_FOR_EDUCATION_RELATED_EVENT",
-		"description_en": "ENGLISH_EVENT_DESCRIPTION_FOR_EDUCATION_RELATED_EVENT",
-		"category": "education",
+		"title": "Te Ture o Waitangi 1975",
+		"title_en": "Treaty of Waitangi Act 1975",
+		"description": "Ka whakatūngia te Rōpū Whakamana i te Tiriti o Waitangi. Ka taea e rātou te whakarongo ki ngā kērēme mō ngā takahanga o te Tiriti.",
+		"description_en": "The Waitangi Tribunal is being established. They will be able to hear claims about Treaty breaches.",
+		"category": "justice",
 		"historical_context": {
-			"year": 1985,
-			"significance": "HISTORICAL_CONTEXT_ABOUT_EDUCATION_MILESTONE",
-			"learn_more_url": "https://example.com/education-history"
+			"year": 1975,
+			"significance": "I whakatūria te Rōpū Whakamana i te Tiriti o Waitangi hei whakarongo ki ngā kērēme. Ko tēnei te tūāpapa mō ngā kōrero mō te Reo Māori.",
+			"learn_more_url": "https://waitangitribunal.govt.nz/"
 		},
 		"tree_id": "tree_2"
 	},
 	{
 		"id": "queue_3",
-		"title": "MAORI_EVENT_TITLE_3",
-		"title_en": "ENGLISH_EVENT_TITLE_3",
-		"description": "MAORI_DESCRIPTION_FOR_MEDIA_BROADCASTING_EVENT",
-		"description_en": "ENGLISH_DESCRIPTION_FOR_MEDIA_BROADCASTING_EVENT",
-		"category": "media",
-		"historical_context": null,
+		"title": "Te Kērēme WAI 11 - 1985",
+		"title_en": "The WAI 11 Claim - 1985",
+		"description": "Kua tukuna te kērēme WAI 11 ki te Rōpū Whakamana. Ko te kī: kei te mate te Reo Māori, ā, he taonga tēnei e tiakina ana e te Tiriti o Waitangi.",
+		"description_en": "The WAI 11 claim has been submitted to the Tribunal. The argument: Te Reo Māori is dying, and it is a treasure protected by the Treaty of Waitangi.",
+		"category": "justice",
+		"historical_context": {
+			"year": 1985,
+			"significance": "Ko WAI 11 te kērēme tuatahi mō te Reo Māori. I whakatakotoria e Huirangi Waikerepuru mā.",
+			"learn_more_url": "https://waitangitribunal.govt.nz/news/report-on-te-reo-maori-claim-wai-11/"
+		},
 		"tree_id": "tree_3"
 	},
 	{
 		"id": "queue_4",
-		"title": "MAORI_EVENT_TITLE_4",
-		"title_en": "ENGLISH_EVENT_TITLE_4",
-		"description": "MAORI_DESCRIPTION_FOR_COMMUNITY_CELEBRATION_EVENT",
-		"description_en": "ENGLISH_DESCRIPTION_FOR_COMMUNITY_CELEBRATION_EVENT",
-		"category": "community",
+		"title": "Te Pūrongo WAI 11 - 1986",
+		"title_en": "The WAI 11 Report - 1986",
+		"description": "Kua whakaputa te Rōpū Whakamana i tā rātou pūrongo. E kī ana rātou: me tautoko te Kāwanatanga i te Reo Māori, kia kaua e mate.",
+		"description_en": "The Tribunal has released their report. They state: The Government must actively support Te Reo Māori to prevent its death.",
+		"category": "justice",
 		"historical_context": {
-			"year": 1975,
-			"significance": "HISTORICAL_BACKGROUND_FOR_LANGUAGE_WEEK_TRADITION",
-			"learn_more_url": "https://example.com/language-week"
+			"year": 1986,
+			"significance": "I kī te pūrongo me whakatū he tari motuhake mō te Reo Māori, me te tautoko pūtea hoki.",
+			"learn_more_url": "https://waitangitribunal.govt.nz/news/report-on-te-reo-maori-claim-wai-11/"
 		},
 		"tree_id": "tree_4"
 	},
 	{
 		"id": "queue_5",
-		"title": "MAORI_EVENT_TITLE_5",
-		"title_en": "ENGLISH_EVENT_TITLE_5",
-		"description": "MAORI_DESCRIPTION_FOR_GOVERNMENT_POLICY_PROPOSAL",
-		"description_en": "ENGLISH_DESCRIPTION_FOR_GOVERNMENT_POLICY_PROPOSAL",
-		"category": "government",
-		"historical_context": null,
-		"tree_id": null
+		"title": "Te Ture Reo Māori 1987",
+		"title_en": "Māori Language Act 1987",
+		"description": "He wā nui tēnei! Ka taea te whakamana i te Reo Māori hei reo ōfihia o Aotearoa. He piki nui tēnei i te mana o te reo.",
+		"description_en": "This is a major moment! Te Reo Māori can be made an official language of New Zealand. This would be a huge boost to the status of the language.",
+		"category": "legislation",
+		"historical_context": {
+			"year": 1987,
+			"significance": "I meinga te Reo Māori hei reo ōfihia. I whakatūria hoki Te Taura Whiri i te Reo Māori (Te Reo Māori Commission).",
+			"learn_more_url": "https://www.legislation.govt.nz/act/public/1987/0176/latest/DLM124116.html"
+		},
+		"tree_id": "tree_5"
 	},
 	{
 		"id": "queue_6",
-		"title": "MAORI_EVENT_TITLE_WITHOUT_TREE",
-		"title_en": "ENGLISH_EVENT_TITLE_WITHOUT_TREE",
-		"description": "MAORI_DESCRIPTION_FOR_EVENT_WITH_NO_DECISIONS",
-		"description_en": "ENGLISH_DESCRIPTION_FOR_EVENT_WITH_NO_DECISIONS",
-		"category": "information",
+		"title": "Te Whakapūtanga o Matawaia 1988",
+		"title_en": "The Matawaia Declaration 1988",
+		"description": "Kua hui ngā rangatira Māori ki Matawaia. Kei te tohe rātou mō te mana motuhake o te reo, me te ako i ngā kura.",
+		"description_en": "Māori leaders have gathered at Matawaia. They are advocating for language autonomy and teaching in schools.",
+		"category": "education",
 		"historical_context": {
-			"year": 2020,
-			"significance": "RECENT_DEVELOPMENT_CONTEXT",
-			"learn_more_url": "https://example.com/recent-news"
+			"year": 1988,
+			"significance": "I whakaputa te Whakapūtanga o Matawaia ngā tikanga matua mō te whakaora i te Reo Māori.",
+			"learn_more_url": "https://tereomaori.tki.org.nz/"
 		},
-		"tree_id": null
+		"tree_id": "tree_6"
+	},
+	{
+		"id": "queue_7",
+		"title": "Te Ture Mātauranga 1989",
+		"title_en": "Education Act 1989",
+		"description": "Ko tēnei ture e whakarite ana i te ako i roto i ngā kura o Aotearoa. Ka taea te whakakaha i te Reo Māori i roto i te pūnaha mātauranga.",
+		"description_en": "This act governs education in New Zealand schools. Te Reo Māori can be strengthened within the education system.",
+		"category": "education",
+		"historical_context": {
+			"year": 1989,
+			"significance": "I whakarite te Education Act 1989 i te mana o ngā kura, tae atu ki ngā Kura Kaupapa Māori.",
+			"learn_more_url": "https://www.legislation.govt.nz/act/public/1989/0080/latest/DLM175959.html"
+		},
+		"tree_id": "tree_7"
+	},
+	{
+		"id": "queue_8",
+		"title": "Te Ture Whakapai 1991",
+		"title_en": "Māori Language Amendment Act 1991",
+		"description": "Ka taea te whakakaha ake i Te Taura Whiri i te Reo Māori. Me pēhea te whakarite i te tari kia kaha ake?",
+		"description_en": "Te Taura Whiri i te Reo Māori can be strengthened. How should the commission be structured to be more effective?",
+		"category": "legislation",
+		"historical_context": {
+			"year": 1991,
+			"significance": "I whakakaha te Amendment Act i te mana o Te Taura Whiri i te Reo Māori.",
+			"learn_more_url": "https://www.legislation.govt.nz/act/public/1991/0002/latest/DLM230265.html"
+		},
+		"tree_id": "tree_8"
+	},
+	{
+		"id": "queue_9",
+		"title": "Te Māngai Pāho 1993",
+		"title_en": "Broadcasting Funding Agency - Te Māngai Pāho 1993",
+		"description": "Ka whakatūria he tari pūtea mō ngā kaupapa pāpāho Māori. Ka taea te tautoko i ngā whakaaturanga reo Māori i te reo irirangi me te pouaka whakaata.",
+		"description_en": "A funding agency for Māori broadcasting will be established. Māori language content on radio and television can be supported.",
+		"category": "media",
+		"historical_context": {
+			"year": 1993,
+			"significance": "I whakatūria Te Māngai Pāho hei tari pūtea mō ngā kaupapa pāpāho Māori.",
+			"learn_more_url": "https://www.tmp.govt.nz/"
+		},
+		"tree_id": "tree_9"
+	},
+	{
+		"id": "queue_10",
+		"title": "Te Tau o te Reo Māori 1995",
+		"title_en": "Māori Language Year 1995",
+		"description": "Kua whakataungia e Te Taura Whiri te tau 1995 ko Te Tau o te Reo Māori. He wā tēnei ki te whakanui me te whakatairanga i te reo.",
+		"description_en": "Te Taura Whiri has declared 1995 as Māori Language Year. This is a time to celebrate and promote the language.",
+		"category": "community",
+		"historical_context": {
+			"year": 1995,
+			"significance": "Ko te Tau o te Reo Māori i 1995 te tuatahi o ēnei momo kaupapa whakanui.",
+			"learn_more_url": "https://www.tpk.govt.nz/en/a-matou-kaupapa/te-reo-maori"
+		},
+		"tree_id": "tree_10"
+	},
+	{
+		"id": "queue_11",
+		"title": "Te Ture Ratonga Pouaka Whakaata Māori 2003",
+		"title_en": "Māori Television Service Act 2003",
+		"description": "Ka whakatūria tētahi rārangi pouaka whakaata motuhake mō te Reo Māori. Ko Māori Television tēnei. He piki nui i te tirohanga o te reo.",
+		"description_en": "A dedicated television channel for Te Reo Māori will be established. This is Māori Television. A huge boost to the visibility of the language.",
+		"category": "media",
+		"historical_context": {
+			"year": 2003,
+			"significance": "I whakatūria Māori Television hei rārangi pouaka whakaata mō te Reo Māori me ngā tikanga Māori.",
+			"learn_more_url": "https://www.maoritelevision.com/"
+		},
+		"tree_id": "tree_11"
+	},
+	{
+		"id": "queue_12",
+		"title": "Te Ture mō Te Takutai Moana 2011",
+		"title_en": "Marine and Coastal Area Act 2011",
+		"description": "Ko tēnei ture mō ngā taha moana me ngā takutai. Ka taea te whakauru i te Reo Māori ki ngā mahi whakahaere rohe.",
+		"description_en": "This act is about the marine and coastal areas. Te Reo Māori can be integrated into regional management processes.",
+		"category": "environment",
+		"historical_context": {
+			"year": 2011,
+			"significance": "I whakarite te ture i ngā tikanga mō ngā takutai moana, me te whakauru i ngā tikanga Māori.",
+			"learn_more_url": "https://www.legislation.govt.nz/act/public/2011/0003/latest/DLM2952706.html"
+		},
+		"tree_id": "tree_12"
+	},
+	{
+		"id": "queue_13",
+		"title": "Te Ture mō Te Reo Māori 2016",
+		"title_en": "Te Ture mō Te Reo Māori (Māori Language Act) 2016",
+		"description": "He ture hou tēnei mō te Reo Māori. Ka whakatūria te mahi tahi o te Karauna me te iwi Māori. Ko te whāinga: kia ora tonu te reo.",
+		"description_en": "This is a new act for Te Reo Māori. Shared governance between the Crown and Māori will be established. The goal: ensure the language thrives.",
+		"category": "legislation",
+		"historical_context": {
+			"year": 2016,
+			"significance": "I whakatū te ture i Te Mātāwai, he tari tahi o te Karauna me te iwi Māori. He ture whakahirahira tēnei mō te whakaora i te reo.",
+			"learn_more_url": "https://www.legislation.govt.nz/act/public/2016/0017/latest/DLM6174815.html"
+		},
+		"tree_id": "tree_13"
 	}
 ]
