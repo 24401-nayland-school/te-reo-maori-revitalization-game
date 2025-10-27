@@ -29,8 +29,8 @@
 	},
 	{
 		"id": "queue_3",
-		"title": "Te Kērēme WAI 11 - 1985",
-		"title_en": "The WAI 11 Claim - 1985",
+		"title": "Te Kērēme WAI 11 1985",
+		"title_en": "The WAI 11 Claim 1985",
 		"description": "Kua tukuna te kērēme WAI 11 ki te Rōpū Whakamana. Ko te kī: kei te mate te Reo Māori, ā, he taonga tēnei e tiakina ana e te Tiriti o Waitangi.",
 		"description_en": "The WAI 11 claim has been submitted to the Tribunal. The argument: Te Reo Māori is dying, and it is a treasure protected by the Treaty of Waitangi.",
 		"category": "justice",
@@ -43,8 +43,8 @@
 	},
 	{
 		"id": "queue_4",
-		"title": "Te Pūrongo WAI 11 - 1986",
-		"title_en": "The WAI 11 Report - 1986",
+		"title": "Te Pūrongo WAI 11 1986",
+		"title_en": "The WAI 11 Report 1986",
 		"description": "Kua whakaputa te Rōpū Whakamana i tā rātou pūrongo. E kī ana rātou: me tautoko te Kāwanatanga i te Reo Māori, kia kaua e mate.",
 		"description_en": "The Tribunal has released their report. They state: The Government must actively support Te Reo Māori to prevent its death.",
 		"category": "justice",
@@ -114,7 +114,7 @@
 	{
 		"id": "queue_9",
 		"title": "Te Māngai Pāho 1993",
-		"title_en": "Broadcasting Funding Agency - Te Māngai Pāho 1993",
+		"title_en": "Broadcasting Funding Agency Te Māngai Pāho 1993",
 		"description": "Ka whakatūria he tari pūtea mō ngā kaupapa pāpāho Māori. Ka taea te tautoko i ngā whakaaturanga reo Māori i te reo irirangi me te pouaka whakaata.",
 		"description_en": "A funding agency for Māori broadcasting will be established. Māori language content on radio and television can be supported.",
 		"category": "media",
