@@ -58,11 +58,12 @@ func _ready() -> void:
 
 # Load the next item from the queue
 func load_next_item() -> void:
+	
 	if queue.is_empty():
 		show_game_complete()
 		return
 	
-	# Make sure tree side is visible for new item
+	# Show tree side
 	tree_side.show()
 	
 	# Get next queue item
@@ -108,6 +109,7 @@ func load_next_item() -> void:
 		else:
 			link_button.hide()
 	else:
+		pass
 		# Hide history section if no context
 		history_label.hide()
 		history_description.hide()
@@ -188,6 +190,7 @@ func display_decision_node(node: TreeNode) -> void:
 	else:
 		# No children, enable next button
 		next_button.disabled = false
+		print(null)
 
 # Navigate to the selected child node
 func handle_option_selected(selected_node: TreeNode) -> void:
